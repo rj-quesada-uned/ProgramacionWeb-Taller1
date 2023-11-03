@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'Logo';
+    src: url(./fonts/Agbalumo-Regular.ttf);
+}
+
+.logo {
+    font-family: 'Logo';
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    width: 50%;
+    background-color: tomato;
+    color: black !important;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .btn:hover {
+    background-color: rgb(154, 60, 44);
+    color: white !important;
+  }
+  .btn:active {
+    background-color: #3e8e41;
+  }
+
+.logo:hover {
+    color: tomato;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+body {
+    color: #414141;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#banner {
+    position: relative;
+    height: 60vh;
+}
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.banner-title {
+    background: #00000061;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+/* Estilos específicos */
+
+#contacto {
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+/* Estilos para enlaces */
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.fa-brands {
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+#derechos-de-autor {
+    display: flex;
+    justify-content: center;
+}
+
+/* Sections */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    text-align: center;
+}
+
+
+/* Articles cards */
+.article-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0;
+    padding: 0;
+
+    @media only screen and (max-width: 1200px) {
+        grid-template-columns: auto auto;
+    }
+    @media only screen and (max-width: 700px) {
+        grid-template-columns: auto;
+    }
+}
+
+
+.article-item {
+    background: white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px -10px rgb(111, 44, 32);
+}
+
+.article-item article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-item a {
+    color: #414141;
+}
+
+.article-item a:hover {
+    text-decoration: none;
+}
+@media only screen and (min-width: 1200px) {
+    .article-item:first-child {
+        margin-left: 0;
+    }
+}
+
+.article-item:last-child {
+    margin-right: 0;
+}
+.article-item .price {
+    display: flex;
+    justify-content: end;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.article-item__img {
+    width: 100%;
+}
