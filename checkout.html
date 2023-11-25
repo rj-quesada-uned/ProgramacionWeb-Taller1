@@ -51,32 +51,36 @@
     </header>
 
     <main>
-        <section id="sidebar">
-            <h2>Resumen de la Compra</h2>
-            <ul>
-                <li>Producto 1: $20</li>
-                <li>Producto 2: $30</li>
-                <li>Producto 3: $15</li>
-            </ul>
-            <p>Total: $65</p>
-        </section>
-        <section>
-            <h1>Formulario de Pago</h1>
-            <form action="" method="">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-    
-                <label for="tarjeta">Número de Tarjeta:</label>
-                <input type="text" id="tarjeta" name="tarjeta" required>
-    
-                <label for="fecha">Fecha de Vencimiento:</label>
-                <input type="text" id="fecha" name="fecha" placeholder="MM/AA" required>
-    
-                <label for="cvv">CVV:</label>
-                <input type="text" id="cvv" name="cvv" required>
-    
-                <input type="submit" value="Pagar">
-            </form>
+        <section class="checkout">
+            <section id="sidebar">
+                <h4 class="mb-3">Factura</h4>
+                <hr>
+                <ul>
+                    <li>Producto 1: $20</li>
+                    <li>Producto 2: $30</li>
+                    <li>Producto 3: $15</li>
+                </ul>
+                <hr>
+                <p>Total: $65</p>
+            </section>
+            <section>
+                <h1 class="mb-5">Formulario de Pago</h1>
+                <form action="" method="">
+                    <label class="form-label" for="nombre">Nombre:</label>
+                    <input class="form-control mb-2" type="text" id="nombre" name="nombre" required>
+
+                    <label class="form-label" for="tarjeta">Número de Tarjeta:</label>
+                    <input class="form-control mb-2" type="text" id="tarjeta" name="tarjeta" required>
+
+                    <label class="form-label" for="fecha">Fecha de Vencimiento:</label>
+                    <input class="form-control mb-2" type="text" id="fecha" name="fecha" placeholder="MM/AA" required>
+
+                    <label class="form-label" for="cvv">CVV:</label>
+                    <input class="form-control mb-2" type="text" id="cvv" name="cvv" required>
+
+                    <input class="btn btn-primary" type="submit" value="Pagar">
+                </form>
+            </section>
         </section>
     </main>
 
