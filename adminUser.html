@@ -94,30 +94,31 @@
         </nav>
     </section>
     <main>
-        <section>
-            <form action="">
-                <div>
-                    <label for="">Nombre completo</label>
-                    <input type="text">
+        <section class="login-form">
+            <form action="" >
+                <div class="mb-3">
+                    <label class="form-label" for="">Nombre completo</label>
+                    <input class="form-control" type="text" required>
                 </div>
-                <div>
-                    <label for="">Correo electronico</label>
-                    <input type="email">
+                <div class="mb-3">
+                    <label class="form-label" for="">Correo electronico</label>
+                    <input class="form-control" type="email" required>
                 </div>
-                <div>
-                    <label for="">Contraseña</label>
-                    <input type="password">
+                <div class="mb-3">
+                    <label class="form-label" for="">Contraseña</label>
+                    <input class="form-control" type="password" required>
                 </div>
-                <div>
-                    <label for="">Rol</label>
-                    <select name="" id="">
-                        <option value="">Administrador</option>
-                        <option value="">Chef</option>
-                        <option value="">Cliente</option>
+                <div class="mb-3">
+                    <label class="form-label" for="">Rol</label>
+                    <select class="form-control" name="" id="" required>
+                        <option value="">Seleccione un rol</option>
+                        <option value="1">Administrador</option>
+                        <option value="2">Chef</option>
+                        <option value="3">Cliente</option>
                     </select>
                 </div>
-                <!--<button type="submit">Guardar</button>-->
-                <a href="./adminProfile.html" class="btn btn-secondary">Guardar</a>
+                <button class="btn btn-secondary" type="submit">Guardar</button>
+                <a href="./adminProfile.html" class="btn btn-secondary mt-3">Guardar</a>
             </form>
         </section>
     </main>
@@ -128,23 +129,23 @@
                 <form action="">
                     <div>
                         <label class="form-label" for="">Nombre Completo</label>
-                        <input class="form-control" type="text">
+                        <input class="form-control" type="text" required>
                     </div>
                     <div>
                         <label class="form-label" for="">Correo electronico</label>
-                        <input class="form-control" type="text">
+                        <input class="form-control" type="email" required>
                     </div>
                     <div>
                         <label class="form-label" for="">Numero telefonico</label>
-                        <input class="form-control" type="text">
+                        <input class="form-control" type="number" required>
                     </div>
                     <div>
                         <label class="form-label" for="">Asunto</label>
-                        <input class="form-control" type="text">
+                        <input class="form-control" type="text" required>
                     </div>
                     <div>
                         <label class="form-label" for="">Detalles</label>
-                        <input class="form-control mb-3" type="text">
+                        <input class="form-control mb-3" type="text" required>
                     </div>
                     <button class="btn btn-light" type="submit">Enviar</button>
                 </form>

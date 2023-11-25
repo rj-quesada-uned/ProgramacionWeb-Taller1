@@ -56,7 +56,7 @@
         </div>
     </section>
     <main>
-        <img src="./img/user.png" alt="">
+        <img class="profile-img img-thumbnail rounded mx-auto d-block mb-5" src="./img/user.png" alt="">
         <div>
             <h4>Nombre Completo:</h4>
             <p>Test Test Test</p>
@@ -73,51 +73,51 @@
             <h4>Correo electronico:</h4>
             <p>test@test.com</p>
         </div>
+        <section class="mt-5">
+            <h3>Historial de compras</h4>
+                <ul class="article-list d-flex justify-content-between">
+                    <li class="article-item border bg-white p-3 rounded-3 mb-4">
+                        <a href="./content.html" >
+                            <article>
+                                <img class="article-item__img" src="./img/77166.jpg" alt="">
+                                <div>
+                                    <h3 class="text-dark">Servicio 1</h3>
+                                    <p class="text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    <p class="price text-dark">$499.99</p>
+                                </div>
+                                <a href="./content.html" class="btn bg-success-subtle w-100" >Ver servicio</a>
+                            </article>
+                        </a>
+                    </li>
+                    <li class="article-item border bg-white p-3 rounded-3 mb-4">
+                        <a href="./content.html" >
+                            <article>
+                                <img class="article-item__img" src="./img/77166.jpg" alt="">
+                                <div>
+                                    <h3 class="text-dark">Servicio 1</h3>
+                                    <p class="text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    <p class="price text-dark">$499.99</p>
+                                </div>
+                                <a href="./content.html" class="btn bg-success-subtle w-100" >Ver servicio</a>
+                            </article>
+                        </a>
+                    </li>
+                    <li class="article-item border bg-white p-3 rounded-3 mb-4">
+                        <a href="./content.html" >
+                            <article>
+                                <img class="article-item__img" src="./img/77166.jpg" alt="">
+                                <div>
+                                    <h3 class="text-dark">Servicio 1</h3>
+                                    <p class="text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    <p class="price text-dark">$499.99</p>
+                                </div>
+                                <a href="./content.html" class="btn bg-success-subtle w-100" >Ver servicio</a>
+                            </article>
+                        </a>
+                    </li>
+                </ul>
+        </section>
     </main>
-    <section>
-        <h3>Productos comprados</h4>
-        <ul class="article-list d-flex">
-            <li class="article-item border bg-white p-3 rounded-3 mb-4">
-                <a href="./content.html" >
-                    <article>
-                        <img class="article-item__img" src="./img/77166.jpg" alt="">
-                        <div>
-                            <h3 class="text-dark">Producto 1</h3>
-                            <p class="text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                            <p class="price text-dark">$499.99</p>
-                        </div>
-                        <a href="./content.html" class="btn bg-success-subtle w-100" >Comprar de nuevo</a>
-                    </article>
-                </a>
-            </li>
-            <li class="article-item border bg-white p-3 rounded-3 mb-4">
-                <a href="./content.html" >
-                    <article>
-                        <img class="article-item__img" src="./img/77166.jpg" alt="">
-                        <div>
-                            <h3 class="text-dark">Producto 2</h3>
-                            <p class="text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                            <p class="price text-dark">$499.99</p>
-                        </div>
-                        <a href="./content.html" class="btn bg-success-subtle w-100" >Comprar de nuevo</a>
-                    </article>
-                </a>
-            </li>
-            <li class="article-item border bg-white p-3 rounded-3 mb-4">
-                <a href="./content.html" >
-                    <article>
-                        <img class="article-item__img" src="./img/77166.jpg" alt="">
-                        <div>
-                            <h3 class="text-dark">Producto 3</h3>
-                            <p class="text-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                            <p class="price text-dark">$499.99</p>
-                        </div>
-                        <a href="./content.html" class="btn bg-success-subtle w-100" >Comprar de nuevo</a>
-                    </article>
-                </a>
-            </li>
-        </ul>
-    </section>
     <footer class="bg-success-subtle">
         <section id="information" class="d-flex">
             <div class="footer-column p-5">
@@ -125,23 +125,23 @@
                 <form action="">
                     <div>
                         <label class="form-label" for="">Nombre Completo</label>
-                        <input class="form-control" type="text">
+                        <input class="form-control" type="text" required>
                     </div>
                     <div>
                         <label class="form-label" for="">Correo electronico</label>
-                        <input class="form-control" type="text">
+                        <input class="form-control" type="email" required>
                     </div>
                     <div>
                         <label class="form-label" for="">Numero telefonico</label>
-                        <input class="form-control" type="text">
+                        <input class="form-control" type="number" required>
                     </div>
                     <div>
                         <label class="form-label" for="">Asunto</label>
-                        <input class="form-control" type="text">
+                        <input class="form-control" type="text" required>
                     </div>
                     <div>
                         <label class="form-label" for="">Detalles</label>
-                        <input class="form-control mb-3" type="text">
+                        <input class="form-control mb-3" type="text" required>
                     </div>
                     <button class="btn btn-light" type="submit">Enviar</button>
                 </form>

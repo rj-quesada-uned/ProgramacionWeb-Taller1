@@ -87,27 +87,28 @@
             </ul>
         </nav>
     </section>
-    <main>
-        <h1>[Tipo de Contenido]</h1>
+    <main class="mb-5">
+        <h1 class="text-center">[Tipo de Contenido]</h1>
 
         <form id="contenidoForm">
-            <label for="titulo">Título:</label>
-            <input type="text" id="titulo" name="titulo" required><br>
+            <label class="form-label" for="titulo">Título:</label>
+            <input class="form-control" type="text" id="titulo" name="titulo" required><br>
 
-            <label for="imagenes">Imágenes:</label>
-            <input type="file" id="imagenes" name="imagenes" multiple><br>
+            <label class="form-label" for="imagenes">Imágenes:</label>
+            <input class="form-control" type="file" id="imagenes" name="imagenes" required><br>
 
-            <label for="cuerpo">Cuerpo:</label>
-            <textarea id="cuerpo" name="cuerpo" rows="4" cols="50" required></textarea><br>
+            <label class="form-label" for="cuerpo">Cuerpo:</label>
+            <textarea class="form-control" id="cuerpo" name="cuerpo" rows="9" cols="50" required></textarea><br>
 
-            <label for="estado">Estado:</label>
-            <select id="estado" name="estado">
+            <label class="form-label" for="estado">Estado:</label>
+            <select class="form-control" id="estado" name="estado" required>
+                <option value="">Seleccione un estado</option>
                 <option value="publicado">Publicado</option>
                 <option value="despublicadopicha ">Despublicado</option>
                 <option value="borrador">Borrador</option>
             </select><br>
 
-            <button type="button">Agregar Contenido</button>
+            <button class="btn btn-secondary" type="submit">Agregar Contenido</button>
         </form>
     </main>
 
@@ -118,23 +119,23 @@
                 <form action="">
                     <div>
                         <label class="form-label" for="">Nombre Completo</label>
-                        <input class="form-control" type="text">
+                        <input class="form-control" type="text" required>
                     </div>
                     <div>
                         <label class="form-label" for="">Correo electronico</label>
-                        <input class="form-control" type="text">
+                        <input class="form-control" type="email" required>
                     </div>
                     <div>
                         <label class="form-label" for="">Numero telefonico</label>
-                        <input class="form-control" type="text">
+                        <input class="form-control" type="number" required>
                     </div>
                     <div>
                         <label class="form-label" for="">Asunto</label>
-                        <input class="form-control" type="text">
+                        <input class="form-control" type="text" required>
                     </div>
                     <div>
                         <label class="form-label" for="">Detalles</label>
-                        <input class="form-control mb-3" type="text">
+                        <input class="form-control mb-3" type="text" required>
                     </div>
                     <button class="btn btn-light" type="submit">Enviar</button>
                 </form>

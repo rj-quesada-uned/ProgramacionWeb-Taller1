@@ -270,3 +270,9 @@ main {
 .box-img:nth-child(5) {
     grid-column-start: span 2;
 }
+.checkout-form {
+    width: 100%;
+}
+.profile-img {
+    width: 200px;
+}
