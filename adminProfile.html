@@ -55,72 +55,79 @@
             <h1>Mantenimiento de Perfiles</h1>
         </div>
     </section>
-    <section id="admin_menu">
-        <ul>
-            <li><a href="./adminContent.html">Tipo de contenido</a>
-                <ul>
-                    <li><a href="./adminContentCreation.html">Noticias</a></li>
-                    <li><a href="./adminContentCreation.html">Blogs</a></li>
-                    <li><a href="./adminContentCreation.html">Productos</a></li>
-                    <li><a href="./adminContentCreation.html">Servicios</a></li>
-                    <li><a href="./adminContentCreation.html">Planes</a></li>
-                    <li><a href="./adminContentCreation.html">Lecciones</a></li>
-                    <li><a href="./adminContentCreation.html">Galería</a></li>
-                </ul>
-            </li>
-            <li>Reportes
-                <ul>
-                    <li><a href="./adminReports.html">Reportes de Lecciones</a></li>
-                    <li><a href="./adminReports.html">Reportes de Compras</a></li>
-                    <li><a href="./adminReports.html">Reportes de Productos</a></li>
-                    <li><a href="./adminReports.html">Reportes de Clientes</a></li>
-                </ul>
-            </li>
-            <li><a href="./adminProfile.html">Usuarios</a>
-                <ul>
-                    <li>Roles
-                        <ul>
-                            <li><a href="">Administrador</a></li>
-                            <li><a href="">Chef</a></li>
-                            <li><a href="">Cliente</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+    <section class="admin_menu mb-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown mx-3">
+                    <p class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tipo de contenido</p>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="./adminContent.html">Noticias</a></li>
+                        <li><a class="dropdown-item" href="./adminContent.html">Blogs</a></li>
+                        <li><a class="dropdown-item" href="./adminContent.html">Productos</a></li>
+                        <li><a class="dropdown-item" href="./adminContent.html">Servicios</a></li>
+                        <li><a class="dropdown-item" href="./adminContent.html">Planes</a></li>
+                        <li><a class="dropdown-item" href="./adminContent.html">Lecciones</a></li>
+                        <li><a class="dropdown-item" href="./adminContent.html">Galería</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown mx-3">
+                    <p class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown" aria-expanded="false">Reportes</p>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="./adminReports.html">Reportes de Lecciones</a></li>
+                        <li><a class="dropdown-item" href="./adminReports.html">Reportes de Compras</a></li>
+                        <li><a class="dropdown-item" href="./adminReports.html">Reportes de Productos</a></li>
+                        <li><a class="dropdown-item" href="./adminReports.html">Reportes de Clientes</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown mx-3">
+                    <p class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown" aria-expanded="false">Usuarios</p>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="./adminProfile.html">Administrar Usuarios</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h4>Roles</h4></li>
+                        <li><a class="dropdown-item" href="#">Administrador</a></li>
+                        <li><a class="dropdown-item" href="#">Chef</a></li>
+                        <li><a class="dropdown-item" href="#">Cliente</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </section>
-    <main>
-        <a href="./adminUser.html" class="btn btn-secondary">Agregar Perfil</a>    
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Correo Electrónico</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Usuario 1</td>
-                    <td>usuario1@example.com</td>
-                    <td>
-                        <a href="./adminUser.html" class="btn btn-secondary">Editar</a>
-                        <a href="#" class="btn btn-danger">Eliminar</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Usuario 2</td>
-                    <td>usuario2@example.com</td>
-                    <td>
-                        <a href="./adminUser.html" class="btn btn-secondary">Editar</a>
-                        <a href="#" class="btn btn-danger">Eliminar</a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+
+    <main class="mb-5">
+        <a href="./adminUser.html" class="btn btn-secondary">Agregar Perfil</a>
+        <div class="table-responsive">
+            <table class="table mt-5">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Correo Electrónico</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</td>
+                        <td scope="row">Usuario 1</td>
+                        <td scope="row">usuario1@example.com</td>
+                        <td class="actions">
+                            <a href="./adminUser.html" class="btn btn-secondary mb-1">Editar</a>
+                            <a href="#" class="btn btn-danger mb-1">Eliminar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>2</td>
+                        <td>Usuario 2</td>
+                        <td>usuario2@example.com</td>
+                        <td class="actions">
+                            <a href="./adminUser.html" class="btn btn-secondary mb-1">Editar</a>
+                            <a href="#" class="btn btn-danger mb-1">Eliminar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
 
     <footer class="bg-success-subtle">
