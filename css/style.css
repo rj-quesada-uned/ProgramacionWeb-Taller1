@@ -192,6 +192,10 @@ footer #information {
     border: 0.5px solid grey;
     border-radius: 1rem;
     margin-bottom: 1rem;
+
+    @media only screen and (max-width: 1000px) {
+        width: 100%;
+    }
 }
 
 .admin_menu {
@@ -228,6 +232,11 @@ main {
     display: flex;
     flex-direction: row-reverse;
     margin: 5rem 0;
+
+    @media only screen and (max-width: 1000px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 
 #sidebar form {
